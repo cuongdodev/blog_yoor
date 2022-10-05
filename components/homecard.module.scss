@@ -1,0 +1,70 @@
+.homeCard {
+    width: 100%;
+    margin-bottom: relative;
+    padding: 20px 40px;
+    overflow: hidden;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    background-color: white;
+
+    .textDate {
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-align: center;
+        -webkit-box-ordinal-group: 2;
+        order: 1;
+        color: black;
+        margin: 20px 0 10px;
+    }
+
+    .textTitle {
+        font-size: 2rem;
+        line-height: 1.3;
+        color: black;
+    }
+
+    .header_after {
+        content: "";
+        height: 2px;
+        width: 70%;
+        background-color: #11b5f5;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .imageHome {
+        max-width: 100%;
+        padding: 20px 0px;
+    }
+
+
+
+    .textDes {
+        color: black;
+        margin-bottom: 25px;
+        line-height: 1.8;
+    }
+
+    .readMore {
+        margin: 0;
+        text-align: center;
+        -webkit-box-ordinal-group: 7;
+        order: 6;
+        margin-bottom: 25px;
+    }
+
+    .buttonReadmore {
+        position: relative;
+        font-size: 1.4rem;
+        font-weight: 600;
+        border: 1px solid #11b5f5;
+        color: #11b5f5;
+        line-height: 1;
+        padding: 12px 30px;
+        border-radius: 0px;
+        display: block;
+    }
+}
