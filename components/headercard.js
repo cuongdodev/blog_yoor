@@ -6,8 +6,9 @@ export default function HeaderCard({
     image
 }) {
     return (
-        <img className={styles.imageHeader}
+
+        <a href="https://blog-yoor.vercel.app/"><img className={styles.imageHeader}
             src={image}
-        />
+        /></a>
     );
 }
