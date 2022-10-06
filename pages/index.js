@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import HomeCard from '../components/homecard'
 import HeaderCard from '../components/headercard'
-import PaginationRounded from '../components/pagination'
 import { HacoCmsClient, SortQuery } from 'hacocms-js-sdk'
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
