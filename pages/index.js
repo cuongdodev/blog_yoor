@@ -63,6 +63,7 @@ export default function Home({ recentEntries, meta }) {
             <div className={styles.containerHome}>
               {recentEntries.map((post) => (
                 <HomeCard
+                  key={post.id}
                   title={post.title_home}
                   date={post.date_home}
                   image={post.image_home}
