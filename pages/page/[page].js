@@ -44,7 +44,7 @@ export async function getStaticProps(params) {
 export default function Home({ recentEntries, meta }) {
 
     const handleChangePage = (page) => {
-        router.push(page === 1 ? "http://localhost:3000" : `/page/${page}`)
+        router.push(page === 1 ? "https://blog-yoor.vercel.app" : `/page/${page}`)
     };
 
 
@@ -80,7 +80,7 @@ export default function Home({ recentEntries, meta }) {
                         </div>
                         <div className={styles.bottomPage}>
                             <Stack spacing={2}>
-                                <Pagination count={meta.total % meta.limit} shape="rounded" defaultPage={meta.offset === 0 ? 1 : meta.offset / meta.limit + 1} onChange={(_, value) => handleChangePage(value)} />
+                                <Pagination count={Math.ceil(meta.total / meta.limit)} shape="rounded" defaultPage={meta.offset === 0 ? 1 : meta.offset / meta.limit + 1} onChange={(_, value) => handleChangePage(value)} />
                             </Stack>
                         </div>
                     </div>
